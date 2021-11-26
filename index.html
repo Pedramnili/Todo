@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://api.iconify.design/flat-color-icons/todo-list.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <title>Home - HW10</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul class="nav-ul">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./listtodo/listtodo.html">Todos</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+        <h1 class="title">My Todo-s</h1>
+        <form id="form" action="">
+            <label for="inputToDo">Title*</label>
+            <input class="input" type="text" name="title" placeholder="what will you do you?" id="inputToDo"
+                onfocus="this.placeholder=''" onblur="this.placeholder='what will you do you?'" autocomplete="off">
+            <span id="error" class="error">*Please Enter your To Do ...</span>
+            <label for="inputToDoText">Desciption</label>
+            <input class="input" type="text" name="description" placeholder="Some information" id="inputToDoText"
+                onfocus="this.placeholder=''" onblur="this.placeholder='Some information'" autocomplete="off">
+            <label for="inputToDoDate">Due Date</label>
+            <input class="input" type="date" name="dueDate" id="inputToDoDate">
+            <input type="submit" value="ADD" id="btn-form">
+        </form>
+        <hr>
+    </div>
+    <div class="toast">
+        <div class="toast-in">
+            <h6>Successful</h6>
+            <div id="close"><span class="iconify" data-icon="ant-design:close-circle-filled"></span></div>
+        </div>
+        <h6>The todo successfully submited.</h6>
+    </div>
+
+
+</body>
+<script src="./main.js"></script>
+
+</html>
